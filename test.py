@@ -51,3 +51,7 @@ print('Day: {}'.format(date.day))
 print('Month: {} ({} days)'.format(month_name, month_days))
 print('Year: {}'.format(date.year))
 print('Week Day: {}'.format(day_of_week))
+
+# Share if you find this helpful
+# https://github.com/randexlofi
+# Thank you <3

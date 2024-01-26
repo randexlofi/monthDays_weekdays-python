@@ -1,30 +1,8 @@
 from datetime import date
 from calendar import monthrange
 
-days = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday'
-]
+import misc
 
-months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-]
 
 # Input the year
 year_inp = int(input('year > '))
@@ -43,8 +21,8 @@ while day_inp < 1 or day_inp > month_days:
 
 date = date(day=day_inp, month=month_inp, year=year_inp)
 index_of_week = date.weekday()
-day_of_week = days[index_of_week]
-month_name = months[date.month - 1]
+day_of_week = misc.days[index_of_week]
+month_name = misc.months[date.month - 1]
 
 
 print('Day: {}'.format(date.day))
